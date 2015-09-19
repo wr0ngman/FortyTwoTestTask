@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+  <div class="container worksheet">
+    
+      
+        <div class="row worksheetheader">
+          <div class="col-md-8">
+            <h3>42 Coffee Cups Test Assignment</h3>
+          </div>
+          <div class="col-md-4">
+            <h3 class="hidden text-right">Login</h3>
+          </div>
+        </div>
+      
+    
+    <div class="container textcontainer">
+
+      <div class="row">
+      
+        <div class="col-md-6">             
+                
+                <div class="row">
+                  <div class="col-md-12">          
+                    <h4 class="textstyle1 text-center">
+                      <strong>General info</strong>
+                    </h4>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12">                    
+                      <label class="col-md-4 textstyle2">Name:</label>
+                      <div class="col-md-4">
+                        <p class="textstyle2">{{devinfo_data.name}}</p>
+                      </div>                      
+                  </div>
+                </div> 
+
+                <div class="row">
+                  <div class="col-md-12">
+                      <label class="col-md-4 textstyle2">Last name:</label>
+                      <div class="col-md-4">
+                        <p class="textstyle2">{{devinfo_data.lastname}}</p>
+                      </div> 
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">                    
+                      <label class="col-md-4 textstyle2">Date of birth:</label>
+                      <div class="col-md-4">
+                        <p class="textstyle2">{{devinfo_data.birthdate}}</p>
+                      </div>                     
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                       <dl>
+                        <dt  class="textstyle2">Bio:</dt>
+                        <dd class="col-md-11">{{devinfo_data.bio}}</dd>
+                      </dl>
+                    
+                  </div>
+                </div>            
+            
+        </div>
+
+        <div class="col-md-6">             
+                
+                <div class="row">
+                  <div class="col-md-12">          
+                    <h4 class="textstyle1 text-center">
+                      <strong>Contacts</strong>
+                    </h4>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12">                    
+                      <label class="col-md-4 textstyle2">Email:</label>
+                      <div class="col-md-4">
+                        <p class="textstyle2">{{devinfo_data.email}}</p>
+                      </div>                      
+                  </div>
+                </div> 
+
+                <div class="row">
+                  <div class="col-md-12">
+                      <label class="col-md-4 textstyle2">Jabber:</label>
+                      <div class="col-md-4">
+                        <p class="textstyle2">{{devinfo_data.jabber}}</p>
+                      </div> 
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">                    
+                      <label class="col-md-4 textstyle2">Skype:</label>
+                      <div class="col-md-4">
+                        <p class="textstyle2">{{devinfo_data.skype}}</p>
+                      </div>                     
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                      <dl>
+                        <dt  class="textstyle2">Other contacts:</dt>
+                        <dd class="col-md-11">{{devinfo_data.othcontacts}}</dd>
+                      </dl>
+                  </div>
+                </div>
+            
+        </div>
+      </div>      
+    
+    </div>
+
+  </div> <!-- /container worksheet -->
+  {% endblock %}
