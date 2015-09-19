@@ -13,4 +13,4 @@ class Devinfo(models.Model):
     othcontacts = models.TextField()
     
     def __unicode__(self):
-        return u'Information about: %s %s email:%s ;jabber:%s'%(self.name, self.lastname)
+        return u'Information about: %s %s email:%s ;jabber:%s'%(self.name, self.lastname, self.email, self.jabber)
