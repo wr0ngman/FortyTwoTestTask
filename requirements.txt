@@ -1,3 +1,4 @@
 Django==1.6.7
 42cc-pystyle
 South
+flake8==2.4.1
