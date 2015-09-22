@@ -4,9 +4,10 @@ from django.test import TestCase
 
 class HelloTests(TestCase):
 
-    """create a test record into base"""
+    """ Model for ticket1 test"""
 
     def test_devinfo_displayed(self):
+        """check user information"""
         models.Devinfo.objects.create(name='Roma',
                                       lastname='Shevchuk',
                                       birthdate='1985-05-17', bio='...',
