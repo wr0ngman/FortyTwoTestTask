@@ -4,9 +4,7 @@ from django.test import TestCase
 
 class HelloTests(TestCase):
 
-    """
-    create a test record into base
-    """
+    """create a test record into base"""
 
     def test_devinfo_displayed(self):
         models.Devinfo.objects.create(name='Roma',
