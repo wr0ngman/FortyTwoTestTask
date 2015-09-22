@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from hello.models import Devinfo
 
-""" Subscribe developer information view to return all fields of the models into the html page """
+""" Subscribe developer information view """
 
 
 def devinfo_view(request):
